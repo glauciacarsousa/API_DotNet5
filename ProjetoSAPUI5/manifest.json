@@ -1,0 +1,46 @@
+{
+  "_version": "1.12.0",
+  "…": null,
+  "sap.ui5": {
+    "…": null,
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "type": "View",
+        "viewType": "XML",
+        "path": "sap.ui.demo.walkthrough.view",
+        "controlId": "app",
+        "controlAggregation": "pages"
+      },
+      "routes": [
+        {
+          "pattern": "",
+          "name": "overview",
+          "target": "overview"
+        },
+        {
+          "pattern": "detail/{invoicePath}",
+          "name": "detail",
+          "target": "detail"
+        }
+      ],
+      "targets": {
+        "overview": {
+          "id": "overview",
+          "name": "Overview"
+        },
+        "detail": {
+          "id": "detail",
+          "name": "Detail"
+        },
+
+        "contentDensities": {
+          "compact": true,
+          "cozy": true
+        }
+
+
+      }
+    }
+  }
+}
